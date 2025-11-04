@@ -1,0 +1,50 @@
+body{
+    display:flex;
+    justify-content: center;
+
+background-color: grey;
+
+}
+.alla{
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 300px 600px 300px;
+    grid-auto-rows: 250px;
+    gap:5px;
+    grid-template-areas: 
+    ".      a       lone"
+    "car    food    food"
+    "car    fancy   road"
+    "mount  mount   road"
+    "mount  mount   .   ";
+}
+img{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;   
+}
+.a{
+    padding: 10px;
+    grid-area: a;
+}
+.food{
+    grid-area: food;
+}
+.car{
+    grid-area: car;
+}
+.lone{
+    grid-area: lone;
+}
+.mountain{
+    grid-area: mount;
+}
+.road{
+    grid-area: road;
+}
+.fancy{
+    grid-area: fancy;
+}
